@@ -11,9 +11,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 
 @Composable
-fun PedidosScreen(modifier: Modifier = Modifier) {
+fun PedidosScreen(modifier: Modifier = Modifier, navController: NavController) {
     Box(modifier = modifier
         .fillMaxSize()
         .background(Color(0xFFFA9A9A9))
