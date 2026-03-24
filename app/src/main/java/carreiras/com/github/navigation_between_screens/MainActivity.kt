@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import carreiras.com.github.navigation_between_screens.screens.LoginScreen
 import carreiras.com.github.navigation_between_screens.ui.theme.Android5navigationbetweenscreensTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,10 +19,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Android5navigationbetweenscreensTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    LoginScreen(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
